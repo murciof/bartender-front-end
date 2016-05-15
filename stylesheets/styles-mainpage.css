@@ -8996,20 +8996,20 @@ h3 {
   vertical-align: middle;
 }
 
-/* line 192, ../sass/styles-mainpage.scss */
+/* line 194, ../sass/styles-mainpage.scss */
 .modal-content {
   color: #333230;
   background-color: #fafafa;
   border-radius: 0;
 }
 
-/* line 198, ../sass/styles-mainpage.scss */
+/* line 200, ../sass/styles-mainpage.scss */
 .modal-header {
   background-image: linear-gradient(45deg, #4f0d58, #71137e);
   color: #fafafa !important;
 }
 
-/* line 203, ../sass/styles-mainpage.scss */
+/* line 205, ../sass/styles-mainpage.scss */
 .close {
   opacity: .7;
 }
