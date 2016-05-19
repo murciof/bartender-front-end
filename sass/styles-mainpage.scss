@@ -73,6 +73,12 @@ $list-color: #e6e6e6;
     animation-delay: 1.2s;
 }
 
+.fade-in.three {
+    -webkit-animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+}
+
 // General Body
 body {
     color: $white-color-normal;
@@ -108,6 +114,29 @@ h3 {
     text-align: center;
 }
 
+.registrationbutton {
+    border: 4px solid $white-color-normal;
+    font-family: 'Selawik_Bold';
+    color: $white-color-normal;
+    padding: 8px;
+    line-height: 60px;
+}
+
+.registrationbutton:hover {
+    color: $white_color_normal;
+    text-decoration:none;
+}
+
+.registrationbutton:focus {
+    color: $white_color_normal;
+    text-decoration:none;
+}
+
+.registrationbutton:visited {
+    color: $white_color_normal;
+    text-decoration:none;
+}
+
 .row {
     margin: 0 !important;
 }
@@ -119,7 +148,7 @@ h3 {
 
 .vertical-center {
     min-height: 100%;
-    min-height: 70vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
 }
@@ -200,8 +229,39 @@ h3 {
     color: $white-color-normal !important;
 }
 
+.modal-button {
+    font-family: 'Selawik_Bold';
+    background-color: transparent;
+    color: $gray-color-darker;
+    border: 4px solid $gray-color-darker;
+    padding: 8px;
+}
+
+.modal-button:hover {
+    background-color: transparent;
+    color: $gray-color-darker;
+    border-color: $gray-color-darker;
+}
+
+.modal-button:active {
+    background-color: transparent;
+    color: $gray-color-darker;
+}
+
+.modal-button:focus {
+    background-color: transparent;
+    color: $gray-color-darker;
+}
+
+.modal-button:visited {
+    background-color: transparent;
+    color: $gray-color-darker;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
 .close {
     opacity: .7;
 }
-
-// 3. Row

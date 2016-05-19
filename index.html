@@ -53,11 +53,19 @@
                     <h4 class="modal-title">Faça seu login</h4>
                 </div>
                 <div class="modal-body">
-                    <p>One fine body&hellip;</p>
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Senha:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn modal-button">Confirmar</button>
                 </div>
             </div>
         </div>
@@ -71,6 +79,10 @@
                 </div>
                 <div class="modal-body">
                     <form role="form">
+                    <div class="checkbox">
+                            <label>
+                                <input type="checkbox">Sou um bartender</label>
+                        </div>
                         <div class="form-group">
                             <label for="name">Nome:</label>
                             <input type="text" class="form-control" id="name">
@@ -99,15 +111,10 @@
                             <label for="cpwd">Confirmar senha:</label>
                             <input type="password" class="form-control" id="cpwd">
                         </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">Sou um bartender</label>
-                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn modal-button">Confirmar</button>
                 </div>
             </div>
         </div>
@@ -118,7 +125,7 @@
                 <img class="box fade-in one brandlogo_mainbody" alt="Bartender" src="./images/icons/BartenderLogo.png" />
                 <h1 class="box fade-in one">Bartender</h1>
                 <h2 class="box fade-in two">A noite está apenas começando!</h2>
-                <a class="box fade-in two" href="#" data-toggle="modal" data-target="#modalRegister">Registre-se agora</a>
+                <a class="registrationbutton box fade-in three" href="#" data-toggle="modal" data-target="#modalRegister">Registre-se agora</a>
             </div>
         </div>
     </div>
