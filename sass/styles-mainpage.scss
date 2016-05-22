@@ -233,7 +233,7 @@ h3 {
     font-family: 'Selawik_Bold';
     background-color: transparent;
     color: $gray-color-darker;
-    border: 4px solid $gray-color-darker;
+    border: 3px solid $gray-color-darker;
     padding: 8px;
 }
 
@@ -264,4 +264,13 @@ h3 {
 
 .close {
     opacity: .7;
+}
+
+// 3. Input
+
+input {
+    font-family: 'Selawik_SemiBold';
+    border: 2px solid $gray-color-darker !important;
+    background-color: transparent !important;
+    color: $gray-color-darker !important; 
 }
