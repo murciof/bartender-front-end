@@ -1,12 +1,321 @@
 // Import Bootstrap Compass integration
 @import 'bootstrap-compass';
-
 // Import custom Bootstrap variables
 @import 'bootstrap-variables';
-
 // Import Bootstrap for Sass
 @import 'bootstrap';
-
+// Import simple sidebar
+@import 'simple-sidebar';
 // Import custom fonts
 @import 'fonts';
 //CUSTOM STYLES BEGINS HERE
+// Colors
+$accent-color-lighter-2: #cc23e4;
+$accent-color-lighter-1: #9319a5;
+$accent-color-normal: #881798;
+$accent-color-darker-1: #71137e;
+$accent-color-darker-2: #4f0d58;
+$gray-color-lighter-3: #d8d3cd;
+$gray-color-lighter-2: #989490;
+$gray-color-lighter-1: #595654;
+$gray-color-normal: #4c4a48;
+$gray-color-darker: #333230;
+$white-color-normal: #fafafa;
+$list-color: #e6e6e6;
+// Effects
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+}
+
+// General Body
+body {
+  padding-top: 50px;
+}
+
+.brandlogo_mainbody {
+  height: 100px;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.onehundredpercent {
+  width: 100%;
+  height: 100%;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+// 1. Navbar
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: inherit;
+}
+
+.navbar-default {
+  border: none;
+}
+
+.navbar-header {
+  background-color: $accent-color-darker-2;
+  font-family: 'Selawik_Light';
+}
+
+.navbar-right {
+  background-color: $accent-color-darker-2;
+}
+
+.navbar-form {
+  height: 50px;
+  margin: 0;
+  float: left;
+  background-color: #71137E;
+}
+
+.navbar-form > .form-group {
+  height: 50px;
+}
+
+.navbar-form > .form-group > input {
+  height: 50px;
+  border: none !important;
+  padding-left: 0;
+  font-family: 'Selawik';
+}
+
+.navbar-form > .btn-navsearch {
+  width: 30px;
+  height: 30px;
+  color: #fafafa;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.navbar-form > .btn-navsearch:focus {
+  color: #fafafa;
+  background-color: transparent;
+  border: 0 !important;
+}
+
+.navbar-form > .btn-navsearch > img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-collapse {
+  padding: 0;
+}
+
+.navbar-brand > img {
+  position: relative;
+}
+
+.brandlogo {
+  height: 28px;
+  position: absolute;
+  top: -20%;
+}
+
+.navbar-userImageDiv {
+  background-color: #4C4A48;
+}
+
+.navbar-userImage {
+  height: 28px;
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+  }
+  .container-fluid {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-form {
+    display: none;
+  }
+}
+
+// 2. Modal
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-content {
+  color: $gray-color-darker;
+  background-color: $white-color-normal;
+  border-radius: 0;
+}
+
+.modal-header {
+  background-image: linear-gradient(45deg, $accent-color-darker-2, $accent-color-darker-1);
+  color: $white-color-normal !important;
+}
+
+.modal-button {
+  font-family: 'Selawik_Bold';
+  background-color: transparent;
+  color: $gray-color-darker;
+  border: 3px solid $gray-color-darker;
+  padding: 8px;
+}
+
+.modal-button:hover {
+  background-color: transparent;
+  color: $gray-color-darker;
+  border-color: $gray-color-darker;
+}
+
+.modal-button:active {
+  background-color: transparent;
+  color: $gray-color-darker;
+}
+
+.modal-button:focus {
+  background-color: transparent;
+  color: $gray-color-darker;
+}
+
+.modal-button:visited {
+  background-color: transparent;
+  color: $gray-color-darker;
+}
+
+.modal-footer {
+  text-align: center;
+}
+
+.close {
+  opacity: .7;
+}
+
+// 3. Input
+
+input {
+  font-family: 'Selawik_SemiBold';
+  border: 2px solid $gray-color-darker !important;
+  background-color: transparent !important;
+  color: $gray-color-darker !important;
+}
+
+// 4. Sidebar
+
+.sidebar-menuentry {
+  height: 28px;
+  width: 28px;
+  display: block;
+  margin: 0 auto;
+}
+
+.sidebar-nav li a {
+  padding: 15px 0px;
+}
+
+// 5. Dropdowns
+
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.dropdown-menu {
+  border-radius: 0;
+  padding: 0 0;
+  background-color: #E6E6E6;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.dropdown-menu > li > a {
+  padding: 15px;
+  transition: background .2s ease-in-out;
+  -moz-transition: background .2s ease-in-out;
+  -webkit-transition: background .2s ease-in-out;
+  -ms-transition: background .2s ease-in-out;
+}
