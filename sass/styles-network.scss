@@ -141,6 +141,27 @@ body {
   border: none !important;
   padding-left: 0;
   font-family: 'Selawik';
+  color: $white-color-normal !important;
+}
+
+.navbar-form > .form-group > input::-webkit-input-placeholder {
+   color: $white-color-normal;
+   opacity: .7;
+}
+
+.navbar-form > .form-group > input:-moz-placeholder { /* Firefox 18- */
+   color: $white-color-normal;
+   opacity: .7;  
+}
+
+.navbar-form > .form-group > input::-moz-placeholder {  /* Firefox 19+ */
+   color: $white-color-normal;
+   opacity: .7;  
+}
+
+.navbar-form > .form-group > input:-ms-input-placeholder {  
+   color: $white-color-normal;
+   opacity: .7;  
 }
 
 .navbar-form > .btn-navsearch {
