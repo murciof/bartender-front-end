@@ -23,320 +23,393 @@ $gray-color-darker: #333230;
 $white-color-normal: #fafafa;
 $list-color: #e6e6e6;
 // Effects
-@-webkit-keyframes fadeIn {
-  from {
+@-webkit-keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@-moz-keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+.fade-in-left {
     opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    transition: transform 1s ease-out;
+    -webkit-animation: fadeInLeft ease-out 1;
+    -moz-animation: fadeInLeft ease-out 1;
+    animation: fadeInLeft ease-out 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.6s;
+    -moz-animation-duration: 0.6s;
+    animation-duration: 0.6s;
 }
 
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.fade-in-left.one {
+    -webkit-animation-delay: 0.15s;
+    -moz-animation-delay: 0.15s;
+    animation-delay: 0.15s;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.fade-in-left.two {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
-.fade-in {
-  opacity: 0;
-  -webkit-animation: fadeIn ease-in 1;
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  animation-duration: 1s;
+.fade-in-left.three {
+    -webkit-animation-delay: 0.45s;
+    -moz-animation-delay: 0.45s;
+    animation-delay: 0.45s;
 }
 
-.fade-in.one {
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+.fade-in-left.four {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
 }
 
-.fade-in.two {
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 1.2s;
-  animation-delay: 1.2s;
+.fade-in-left.five {
+    -webkit-animation-delay: 0.75s;
+    -moz-animation-delay: 0.75s;
+    animation-delay: 0.75s;
 }
 
-.fade-in.three {
-  -webkit-animation-delay: 1.7s;
-  -moz-animation-delay: 1.7s;
-  animation-delay: 1.7s;
+.fade-in-left.six {
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    animation-delay: 0.9s;
 }
 
 // General Body
 body {
-  padding-top: 50px;
+    padding-top: 50px;
 }
 
 .brandlogo_mainbody {
-  height: 100px;
+    height: 100px;
 }
 
 .row {
-  margin: 0 !important;
+    margin: 0 !important;
 }
 
 .onehundredpercent {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .vertical-center {
-  min-height: 100%;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
+    min-height: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
 // 1. Navbar
-
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: inherit;
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: inherit;
 }
 
 .navbar-default {
-  border: none;
+    border: none;
 }
 
 .navbar-header {
-  background-color: $accent-color-darker-2;
-  font-family: 'Selawik_Light';
+    background-color: $accent-color-darker-2;
+    font-family: 'Selawik_Light';
 }
 
 .navbar-right {
-  background-color: $accent-color-darker-2;
+    background-color: $accent-color-darker-2;
 }
 
 .navbar-form {
-  height: 50px;
-  margin: 0;
-  float: left;
-  background-color: #71137E;
+    height: 50px;
+    margin: 0;
+    float: left;
+    background-color: #71137E;
 }
 
 .navbar-form > .form-group {
-  height: 50px;
+    height: 50px;
 }
 
 .navbar-form > .form-group > input {
-  height: 50px;
-  border: none !important;
-  padding-left: 0;
-  font-family: 'Selawik';
-  color: $white-color-normal !important;
+    height: 50px;
+    border: none !important;
+    padding-left: 0;
+    font-family: 'Selawik';
+    color: $white-color-normal !important;
 }
 
 .navbar-form > .form-group > input::-webkit-input-placeholder {
-   color: $white-color-normal;
-   opacity: .7;
+    color: $white-color-normal;
+    opacity: .7;
 }
 
-.navbar-form > .form-group > input:-moz-placeholder { /* Firefox 18- */
-   color: $white-color-normal;
-   opacity: .7;  
+.navbar-form > .form-group > input:-moz-placeholder {
+    /* Firefox 18- */
+    color: $white-color-normal;
+    opacity: .7;
 }
 
-.navbar-form > .form-group > input::-moz-placeholder {  /* Firefox 19+ */
-   color: $white-color-normal;
-   opacity: .7;  
+.navbar-form > .form-group > input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $white-color-normal;
+    opacity: .7;
 }
 
-.navbar-form > .form-group > input:-ms-input-placeholder {  
-   color: $white-color-normal;
-   opacity: .7;  
+.navbar-form > .form-group > input:-ms-input-placeholder {
+    color: $white-color-normal;
+    opacity: .7;
 }
 
 .navbar-form > .btn-navsearch {
-  width: 30px;
-  height: 30px;
-  color: #fafafa;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
+    width: 30px;
+    height: 30px;
+    color: #fafafa;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
 }
 
 .navbar-form > .btn-navsearch:focus {
-  color: #fafafa;
-  background-color: transparent;
-  border: 0 !important;
+    color: #fafafa;
+    background-color: transparent;
+    border: 0 !important;
 }
 
 .navbar-form > .btn-navsearch > img {
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .navbar-collapse {
-  padding: 0;
+    padding: 0;
 }
 
 .navbar-brand > img {
-  position: relative;
+    position: relative;
 }
 
 .brandlogo {
-  height: 28px;
-  position: absolute;
-  top: -20%;
+    height: 28px;
+    position: absolute;
+    top: -20%;
 }
 
 .navbar-userImageDiv {
-  background-color: #4C4A48;
+    background-color: #4C4A48;
 }
 
 .navbar-userImage {
-  height: 28px;
+    height: 28px;
 }
 
 @media (min-width: 768px) {
-  .navbar > .container .navbar-brand,
-  .navbar > .container-fluid .navbar-brand {
-    margin-left: 0px;
-  }
-  .container-fluid {
-    padding-left: 0;
-  }
+    .navbar > .container .navbar-brand,
+    .navbar > .container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+    .container-fluid {
+        padding-left: 0;
+    }
 }
 
 @media (max-width: 767px) {
-  .navbar-nav {
-    margin: 0;
-  }
-  .navbar-form {
-    display: none;
-  }
+    .navbar-nav {
+        margin: 0;
+    }
+    .navbar-form {
+        display: none;
+    }
 }
 
 // 2. Modal
 .modal {
-  text-align: center;
-  padding: 0!important;
+    text-align: center;
+    padding: 0!important;
 }
 
 .modal:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -4px;
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
 }
 
 .modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
 
 .modal-content {
-  color: $gray-color-darker;
-  background-color: $white-color-normal;
-  border-radius: 0;
+    color: $gray-color-darker;
+    background-color: $white-color-normal;
+    border-radius: 0;
 }
 
 .modal-header {
-  background-image: linear-gradient(45deg, $accent-color-darker-2, $accent-color-darker-1);
-  color: $white-color-normal !important;
+    background-image: linear-gradient(45deg, $accent-color-darker-2, $accent-color-darker-1);
+    color: $white-color-normal !important;
 }
 
 .modal-button {
-  font-family: 'Selawik_Bold';
-  background-color: transparent;
-  color: $gray-color-darker;
-  border: 3px solid $gray-color-darker;
-  padding: 8px;
+    font-family: 'Selawik_Bold';
+    background-color: transparent;
+    color: $gray-color-darker;
+    border: 3px solid $gray-color-darker;
+    padding: 8px;
 }
 
 .modal-button:hover {
-  background-color: transparent;
-  color: $gray-color-darker;
-  border-color: $gray-color-darker;
+    background-color: transparent;
+    color: $gray-color-darker;
+    border-color: $gray-color-darker;
 }
 
 .modal-button:active {
-  background-color: transparent;
-  color: $gray-color-darker;
+    background-color: transparent;
+    color: $gray-color-darker;
 }
 
 .modal-button:focus {
-  background-color: transparent;
-  color: $gray-color-darker;
+    background-color: transparent;
+    color: $gray-color-darker;
 }
 
 .modal-button:visited {
-  background-color: transparent;
-  color: $gray-color-darker;
+    background-color: transparent;
+    color: $gray-color-darker;
 }
 
 .modal-footer {
-  text-align: center;
+    text-align: center;
 }
 
 .close {
-  opacity: .7;
+    opacity: .7;
 }
 
 // 3. Input
-
 input {
-  font-family: 'Selawik_SemiBold';
-  border: 2px solid $gray-color-darker !important;
-  background-color: transparent !important;
-  color: $gray-color-darker !important;
+    font-family: 'Selawik_SemiBold';
+    border: 2px solid $gray-color-darker !important;
+    background-color: transparent !important;
+    color: $gray-color-darker !important;
 }
 
 // 4. Sidebar
-
 .sidebar-menuentry {
-  height: 28px;
-  width: 28px;
-  display: block;
-  margin: 0 auto;
+    height: 28px;
+    width: 28px;
+    display: block;
+    margin: 0 auto;
 }
 
 .sidebar-nav li a {
-  padding: 15px 0px;
+    padding: 15px 0px;
 }
 
 // 5. Dropdowns
-
 @media (min-width: 768px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 .dropdown-menu {
-  border-radius: 0;
-  padding: 0 0;
-  background-color: #E6E6E6;
-  -moz-box-shadow: none;
-  -ms-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+    border-radius: 0;
+    padding: 0 0;
+    background-color: #E6E6E6;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .dropdown-menu > li > a {
-  padding: 15px;
-  transition: background .2s ease-in-out;
-  -moz-transition: background .2s ease-in-out;
-  -webkit-transition: background .2s ease-in-out;
-  -ms-transition: background .2s ease-in-out;
+    padding: 15px;
+    transition: background .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out;
+    -webkit-transition: background .2s ease-in-out;
+    -ms-transition: background .2s ease-in-out;
 }
+
+// 6. Panels
+
+.panel-body {
+    color: $white-color-normal;
+    background-image: linear-gradient(45deg, $accent-color-darker-2, $accent-color-darker-1); 
+}
+
+.panel-metrotitle {
+    font-family: 'Selawik_SemiLight';
+    font-size: 20px;
+}
+
+.panel-details {
+    margin-top: 16px;
+    display: block;
+}
+
+.panel-detailsicon {
+    height: 36px;
+}
+
+.panel-afterdetailsicon {
+    padding-left: 12px;
+    padding-bottom:8px;
+    padding-top: 8px;
+ }
+
+.panel-afterdetailsicon > p {
+    margin: 0 !important;
+}
+
+.panel-afterdetailsicon-entity {
+    color: inherit;
+}
+
+.panel-afterdetailsicon-entity:hover {
+    color: inherit;
+}
+
+.panel-afterdetailsicon-entity:focus {
+    color: inherit;
+}
+
+.panel-afterdetailsicon-entity:visited {
+    color: inherit;
+}
+
