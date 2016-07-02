@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bartender</title>
+    <title>Dashboard</title>
     <!-- Bootstrap -->
     <link href="stylesheets/styles-network.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -55,6 +55,18 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    <div id="modalDrink" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Drink</h4>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
@@ -63,10 +75,10 @@
                     <a href="#"><img class="sidebar-menuentry" alt="Dashboard" src="./images/icons/dashboardIcon.png" /></a>
                 </li>
                 <li>
-                    <a href="#"><img class="sidebar-menuentry" alt="Listar Usuários" src="./images/icons/userlistIcon.png" /></a>
+                    <a href="./list.html"><img class="sidebar-menuentry" alt="Listar Usuários" src="./images/icons/userlistIcon.png" /></a>
                 </li>
                 <li>
-                    <a href="#"><img class="sidebar-menuentry" alt="Configurações" src="./images/icons/configurationsIcon.png" /></a>
+                    <a href="./config.html"><img class="sidebar-menuentry" alt="Configurações" src="./images/icons/configurationsIcon.png" /></a>
                 </li>
             </ul>
         </div>
@@ -85,7 +97,7 @@
                                     <p><strong>Última vez logado: </strong>20 de Abril de 2016</p>
                                     <p><strong>Última reserva de bartender: </strong>Fortaleza, 1 de Janeiro de 2016, com Winston Fairbanks</p>
                                     <p><strong>Localização: </strong>Você está em <strong>Fortaleza, Ceará</strong>, encontramos 40 bartenders próximos a você.
-                                    <p><strong>Demanda: </strong>Foram feitos 423 contratos nos últimos 30 dias</p>
+                                        <p><strong>Demanda: </strong>Foram feitos 423 contratos nos últimos 30 dias</p>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +113,7 @@
                                         <tr>
                                             <td><img class="panel-detailsicon" alt="" src="./images/icons/bartenderIcon.png" /></td>
                                             <td class="panel-afterdetailsicon">
-                                                <a class="panel-afterdetailsicon-entity" href="#"><strong>Winston Fairbanks</strong></a>
+                                                <a class="panel-afterdetailsicon-entity" href="./bartender.html"><strong>Winston Fairbanks</strong></a>
                                                 <p>20 contratos no último mês</p>
                                                 <p>95% de satisfação</p>
                                             </td>
@@ -109,7 +121,7 @@
                                         <tr>
                                             <td><img class="panel-detailsicon" alt="" src="./images/icons/bartenderIcon.png" /></td>
                                             <td class="panel-afterdetailsicon">
-                                                <a class="panel-afterdetailsicon-entity" href="#"><strong>Yustion Johnson</strong></a>
+                                                <a class="panel-afterdetailsicon-entity" href="./bartender.html"><strong>Yustion Johnson</strong></a>
                                                 <p>10 contratos no último mês</p>
                                                 <p>90% de satisfação</p>
                                             </td>
@@ -117,7 +129,7 @@
                                         <tr>
                                             <td><img class="panel-detailsicon" alt="" src="./images/icons/bartenderIcon.png" /></td>
                                             <td class="panel-afterdetailsicon">
-                                                <a class="panel-afterdetailsicon-entity" href="#"><strong>Johanna Al'rak</strong></a>
+                                                <a class="panel-afterdetailsicon-entity" href="./bartender.html"><strong>Johanna Al'rak</strong></a>
                                                 <p>8 contratos no último mês</p>
                                                 <p>85% de satisfação</p>
                                             </td>
@@ -138,24 +150,24 @@
                                         <tr>
                                             <td><img class="panel-detailsicon" alt="" src="./images/icons/drinkIcon.png" /></td>
                                             <td class="panel-afterdetailsicon">
-                                                <a class="panel-afterdetailsicon-entity" href="#"><strong>Caipirinha suprema</strong></a>
-                                                <p>de <a class="panel-afterdetailsicon-entity" href="#">Winston Fairbanks</a></p>
+                                                <a class="panel-afterdetailsicon-entity" href="#" data-toggle="modal" data-target="#modalDrink"><strong>Caipirinha suprema</strong></a>
+                                                <p>de <a class="panel-afterdetailsicon-entity" href="./bartender.html">Winston Fairbanks</a></p>
                                                 <p>Nota de <strong>5/5</strong> no último mês</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td><img class="panel-detailsicon" alt="" src="./images/icons/drinkIcon.png" /></td>
                                             <td class="panel-afterdetailsicon">
-                                                <a class="panel-afterdetailsicon-entity" href="#"><strong>Coquetel clássico</strong></a>
-                                                <p>de <a class="panel-afterdetailsicon-entity" href="#">Johanna Al'rak</a></p>
+                                                <a class="panel-afterdetailsicon-entity" href="#" data-toggle="modal" data-target="#modalDrink"><strong>Coquetel clássico</strong></a>
+                                                <p>de <a class="panel-afterdetailsicon-entity" href="./bartender.html">Johanna Al'rak</a></p>
                                                 <p>Nota de <strong>4.5/5</strong> no último mês</p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td><img class="panel-detailsicon" alt="" src="./images/icons/drinkIcon.png" /></td>
                                             <td class="panel-afterdetailsicon">
-                                                <a class="panel-afterdetailsicon-entity" href="#"><strong>Vinho de laranja</strong></a>
-                                                <p>de <a class="panel-afterdetailsicon-entity" href="#">Yustion Johnson</a></p>
+                                                <a class="panel-afterdetailsicon-entity" href="#" data-toggle="modal" data-target="#modalDrink"><strong>Vinho de laranja</strong></a>
+                                                <p>de <a class="panel-afterdetailsicon-entity" href="./bartender.html">Yustion Johnson</a></p>
                                                 <p>Nota de <strong>4.3/5</strong> no último mês</p>
                                             </td>
                                         </tr>
@@ -173,6 +185,7 @@
                                     Localização
                                 </div>
                                 <div class="panel-details">
+                                    <p>Você está em <a class="panel-afterdetailsicon-entity" href="#"><strong>Fortaleza</strong></a></p>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +194,7 @@
                         <div class="fade-in-left five panel panel-default">
                             <div class="panel-body">
                                 <div class="panel-metrotitle">
-                                    Bem-vindo Usuário
+                                    (Bartender) Demanda
                                 </div>
                             </div>
                         </div>
@@ -190,7 +203,7 @@
                         <div class="fade-in-left six panel panel-default">
                             <div class="panel-body">
                                 <div class="panel-metrotitle">
-                                    Bem-vindo Usuário
+                                    (Bartender) Suas avaliações
                                 </div>
                             </div>
                         </div>

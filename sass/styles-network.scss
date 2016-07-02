@@ -24,36 +24,36 @@ $white-color-normal: #fafafa;
 $list-color: #e6e6e6;
 // Effects
 @-webkit-keyframes fadeInLeft {
-   0% {
-      opacity: 0;
-      transform: translateX(-20px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @-moz-keyframes fadeInLeft {
-   0% {
-      opacity: 0;
-      transform: translateX(-20px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes fadeInLeft {
-   0% {
-      opacity: 0;
-      transform: translateX(-20px);
-   }
-   100% {
-      opacity: 1;
-      transform: translateX(0);
-   }
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .fade-in-left {
@@ -106,6 +106,22 @@ $list-color: #e6e6e6;
     animation-delay: 0.9s;
 }
 
+.fade-in-left.seven {
+    -webkit-animation-delay: 1.05s;
+    -moz-animation-delay: 1.05s;
+    animation-delay: 1.05s;
+}
+
+.fade-in-left.eight {
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.paddingzero {
+    padding: 0 !important;
+}
+
 // General Body
 body {
     padding-top: 50px;
@@ -117,6 +133,10 @@ body {
 
 .row {
     margin: 0 !important;
+}
+
+.row-centered {
+    text-align: center;
 }
 
 .onehundredpercent {
@@ -367,10 +387,9 @@ input {
 }
 
 // 6. Panels
-
 .panel-body {
     color: $white-color-normal;
-    background-image: linear-gradient(45deg, $accent-color-darker-2, $accent-color-darker-1); 
+    background-image: linear-gradient(45deg, $accent-color-darker-2, $accent-color-darker-1);
 }
 
 .panel-metrotitle {
@@ -389,9 +408,9 @@ input {
 
 .panel-afterdetailsicon {
     padding-left: 12px;
-    padding-bottom:8px;
+    padding-bottom: 8px;
     padding-top: 8px;
- }
+}
 
 .panel-afterdetailsicon > p {
     margin: 0 !important;
@@ -413,3 +432,169 @@ input {
     color: inherit;
 }
 
+// 7. Profile Screen/Header/Subheader
+.profile-screen-wrapper {
+    display: block;
+    width: 100%;
+    min-height: 100% !important;
+    height: 100%;
+    background-image: url('../images/backgrounds/219H.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    background-size: cover;
+}
+
+.profile-header-image {
+    height: 120px;
+    margin-top: 40px;
+    float: center;
+}
+
+.profile-subheader-title {
+    font-family: 'Selawik_SemiBold';
+    font-size: 36px;
+    margin-top: 16px;
+    color: $white-color-normal;
+}
+
+.profile-subheader-subtitle {
+    font-family: 'Selawik_SemiLight';
+    font-size: 18px;
+    color: $white-color-normal;
+}
+
+.profile-header-button {
+    font-family: 'Selawik_Bold';
+    font-size: 14px;
+    background-color: transparent;
+    color: $white-color-normal;
+    border: 3px solid $white-color-normal;
+    padding: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profile-header-button:hover {
+    background-color: transparent;
+    color: $white-color-normal;
+    border-color: $white-color-normal;
+}
+
+.profile-header-button:active {
+    background-color: transparent;
+    color: $white-color-normal;
+}
+
+.profile-header-button:focus {
+    background-color: transparent;
+    color: $white-color-normal;
+}
+
+.profile-header-button:visited {
+    background-color: transparent;
+    color: $white-color-normal;
+}
+
+.profile-header-buttongroup {
+    margin-top: 12px !important;
+}
+
+.profile-header-button-icon {
+    position: relative;
+    height: 18px;
+    margin-right: 8px;
+    margin-left: 4px;
+    bottom: 2px;
+}
+
+.profile-buttonlink {
+    color: inherit;
+    vertical-align: center;
+}
+
+.profile-buttonlink:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.profile-buttonlink:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+.profile-buttonlink:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.profile-bottom {
+    width: 100%;
+}
+
+
+/*.profile-bottom-glass::before{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/backgrounds/219H.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-filter: blur(12px);
+}*/
+
+.profile-bottom {
+    margin-top: 40px !important;
+}
+
+.profile-panel {
+    border: none;
+}
+
+.profile-drink-description {
+    font-size: 13px;
+}
+
+.profile-input-date{
+    margin-left: 8px;
+    color: $white-color-normal !important;
+    border: $white-color-normal !important;
+}
+
+.profile-contract-panel{
+    text-align: center;
+}
+
+.profile-contract-button{
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    .profile-header-image {
+        height: 100px;
+        margin-top: 20px;
+    }
+    .profile-subheader-title {
+        font-family: 'Selawik_SemiBold';
+        font-size: 28px;
+        margin-top: 12px;
+        color: $white-color-normal;
+    }
+    .profile-subheader-subtitle {
+        font-family: 'Selawik_SemiLight';
+        font-size: 16px;
+        color: $white-color-normal;
+    }
+    .profile-header-button {
+        font-size: 14px;
+        margin-top: 10px !important;
+    }
+    .profile-header-buttongroup {
+        margin-top: 4px !important;
+    }
+}
