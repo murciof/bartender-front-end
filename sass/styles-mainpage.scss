@@ -83,7 +83,7 @@ $list-color: #e6e6e6;
 body {
     color: $white-color-normal;
     padding-top: 70px;
-    background-image: url('../images/backgrounds/boston_at_night.png');
+    background-image: url('../images/backgrounds/city-night-skyline-river.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -272,5 +272,5 @@ input {
     font-family: 'Selawik_SemiBold';
     border: 2px solid $gray-color-darker !important;
     background-color: transparent !important;
-    color: $gray-color-darker !important; 
+    color: $gray-color-darker !important;
 }
